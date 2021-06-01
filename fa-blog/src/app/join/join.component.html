@@ -1,0 +1,22 @@
+<form
+  [formGroup]="joinForm"
+  (ngSubmit)="onSubmit()"
+>
+  <label>
+    Login:
+    <input formControlName="login" required>
+  </label>
+
+  <label>
+    Password:
+    <input formControlName="password" required>
+  </label>
+
+  <label>
+    Email:
+    <input formControlName="email" required>
+  </label>
+
+  <button [disabled]="loading">Join</button>
+</form>
+

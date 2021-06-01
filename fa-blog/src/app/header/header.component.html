@@ -1,0 +1,11 @@
+<h1><a routerLink="/">FaBlog</a></h1>
+
+<ng-container *ngIf="user">
+  <a routerLink="/new">New Post</a>
+  <button (click)="onLogout()">Logout</button>
+</ng-container>
+
+<ng-container *ngIf="!user">
+  <a routerLink="/login">Login</a>
+  <a routerLink="/join">Join</a>
+</ng-container>
